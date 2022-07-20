@@ -15,11 +15,12 @@ const useList = (initialValue = []) => {
 
     // List is Empty ? true / false
     const isEmpty = () => value.length === 0;
+    const exampleArr = [2, 4, 32, 16, 42, 6, 22]
+    const arrOrderAsc = exampleArr.sort((a,b) => a-b) 
 
-    const clear=()=>setValue(null)
-
+    const arrOrderDes = exampleArr.sort((a,b) => b-a)
     return {
-            value, setValue, push, remove, isEmpty,clear
+            value, setValue, push, remove, isEmpty,exampleArr,arrOrderAsc,arrOrderDes
         };
 };
 
