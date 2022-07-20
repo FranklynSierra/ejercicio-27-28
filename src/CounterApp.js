@@ -1,9 +1,9 @@
 
 import useCounter from "./hooks/useCounter";
-const App=()=> {
+const CounterApp=()=> {
  const [counter,increment,reset,decrement]=useCounter()
     return (
-    <div >
+    <div className="App">
        <h1>Clicks: {counter}</h1>
        <button onClick={increment}>Incrementar</button>
        <button onClick={reset}>Reset</button>
@@ -12,4 +12,4 @@ const App=()=> {
   );
 }
 
-export default App;
+export default CounterApp;
